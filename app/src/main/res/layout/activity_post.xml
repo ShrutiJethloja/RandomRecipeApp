@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".PostActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the following details to generate a card"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:textSize="20sp"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/post_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="Title"
+        android:layout_margin="8dp"/>
+    <EditText
+        android:id="@+id/post_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:hint="Ingredients"
+        android:layout_margin="8dp"/>
+    <EditText
+        android:id="@+id/post_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Instructions"
+        android:layout_margin="8dp"/>
+    <EditText
+        android:id="@+id/post_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total time in Minutes"
+        android:layout_margin="8dp"/>
+    <EditText
+        android:id="@+id/post_servings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Servings"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="ImageUrl"
+        android:inputType="textUri"/>
+    <EditText
+        android:id="@+id/post_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Author"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/post_submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:layout_margin="8dp" />
+</LinearLayout>
